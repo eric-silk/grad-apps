@@ -20,7 +20,7 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \documentclass[letterpaper]{article}
-\usepackage[letterpaper,margin=1.75in,noheadfoot]{geometry}
+\usepackage[letterpaper,margin=1.0in,noheadfoot]{geometry}
 \usepackage{fontspec, color, enumerate, sectsty}
 \usepackage[normalem]{ulem}
 
@@ -51,119 +51,123 @@ pdftitle={\yourname - \soptitle},pdfauthor={\yourname}, unicode]{hyperref}
 %                      SOP Body
 % NOTE: Use \amper instead of \&
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\section*{Introduction}
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam
-sodales, ipsum a commodo tempus, arcu magna bibendum turpis, at
-eleifend nulla lectus et turpis. Etiam nisi risus, ultricies at auctor
-id, mollis vitae lorem. Morbi vel rhoncus mi. Aenean euismod eros
-vitae turpis porttitor varius. Donec aliquam fringilla tellus nec
-venenatis. Fusce ornare tempor metus, non bibendum massa vehicula sit
-amet. Integer ultrices rutrum velit, in facilisis augue feugiat sed.
-Fusce luctus tristique pretium. Nullam consequat tincidunt sem, at
-gravida purus gravida at. Suspendisse potenti. Nunc ante leo, volutpat
-pretium fringilla id, malesuada et dolor. Aliquam blandit, magna eget
-porta tempus, quam neque ultrices mi, vel pretium ipsum ante tristique
-massa. Pellentesque habitant morbi tristique senectus et netus et
-malesuada fames ac turpis egestas. In hac habitasse platea dictumst.
+\section*{Motivation and Background}
+I am a Research Engineer at Schweitzer Engineering Laboratories (SEL), and graduating masters
+student of Applied Mathematics at the University of Washington with an undergraduate
+education in Electrical Engineering from the University of Idaho. My employer's mission is
+a simple one, and one I believe in: to make electric power safer, more reliable, and
+more economical. On a daily basis I perform at the intersection of applied math, electrical
+engineering, and software engineering to further this goal.
 
-\section*{Research Experience}
-\paragraph{Project \#1}
-Morbi sed sapien ut ante elementum luctus vitae et libero. Praesent
-felis enim, elementum nec suscipit non, suscipit a diam. Nulla
-vulputate facilisis orci, vel iaculis odio feugiat id. Fusce in dolor
-interdum ante dignissim bibendum. Nullam euismod interdum commodo.
-Etiam a mauris ac purus dignissim ultrices at eu nisl. Suspendisse
-varius ipsum eu massa ullamcorper in convallis nulla vulputate.
+When I transferred to Government Services from R\&D, it became readily apparent there was
+an immense need for people who were capable of bridging the gap between the abstract and
+sometimes esoteric world of mathematics, and the real-world application of these ideas.
+To address my deficincies in the prior, I elected to pursue graduate education. 
+Three years later, even with the huge strides I have made, it is obvious my work has
+just started.
 
-\paragraph{Project \#2}
-Nam facilisis lacinia gravida. Pellentesque habitant morbi tristique
-senectus et netus et malesuada fames ac turpis egestas. Praesent
-fermentum, est vitae ultrices vulputate, sapien leo hendrerit elit,
-sed lacinia enim tortor scelerisque augue. Aliquam non sapien metus,
-sed tincidunt dolor. Sed porta euismod pharetra. Aenean augue urna,
-sollicitudin at viverra quis, ullamcorper ac quam. Pellentesque est
-ante, tincidunt sed mollis nec, posuere sit amet risus. Aenean ut
-tortor dolor. Curabitur at odio at quam lacinia malesuada vitae vel
-ante. Morbi nisl nisi, elementum non porta non, auctor vitae tellus.
-Pellentesque quis eleifend lectus. Duis sit amet orci massa, at luctus
-lectus. Aenean sit amet nulla erat. Duis egestas tristique dignissim.
-Nam iaculis massa eu felis rhoncus gravida.
+\section*{Relevant Experience}
+\paragraph{Career Research}
+I must preface this section: due to its nature, I'm not able to discuss specifics of
+much of the work I do for my employer, and we are definitely not allowed to publish.
+However, I can say we are recognized as experts
+on power systems by various federal agencies and regularly provide research, analysis,
+and product to this end. In particular, we in the Data Analytics group marry this expertise
+with high performance computing, machine learning, statistics, and traditional applied
+mathematics to achieve novel and challenging goals.
 
-\paragraph{Project \#3}
-Nulla non mauris quis mi pellentesque interdum. Sed venenatis pretium
-sem sed pretium. Pellentesque et augue velit, ut bibendum leo. Proin
-congue nisl id leo tristique sagittis. Curabitur id diam in turpis
-faucibus pharetra eget elementum orci. Sed vel nunc nibh. Praesent non
-enim eros, sed convallis dui. Pellentesque accumsan viverra dolor sed
-luctus.
+Of those I can discuss, several stand out. My first assignment was developing an Internet
+of Things (IoT) based sensor system to measure and store Synchrophasor data (GPS timestamped
+frequency, voltage, and phase) on the cloud. This involved selecting a computing platform,
+developing code to interact with a phasor measurement unit (PMU), robust logging and
+system restart behavior, and code for Amazon Web Services' IoT, Lambda, and S3
+services. Then, these devices were hardened to prevent tampering through
+careful device configuration (SSH keys and passwords, disabling of WiFi, disabling
+of default accounts, etc.) We succesfully deployed several devices that showed greater
+resiliency than SEL's existing solution. In fact, the only major complication was
+handling proxies, as AWS's IoT implementation did not fully support common corporate
+proxy techniques at that time.
 
-\paragraph{Project \#4}
-Sed non posuere leo. Curabitur eu est ut tellus ultrices ornare quis
-ut tortor. Aliquam faucibus mauris in leo tincidunt euismod. Aliquam
-lacinia euismod dolor, tempus gravida erat facilisis elementum.
-Pellentesque pretium pharetra orci, eu consequat arcu dapibus et.
-Quisque quis dolor magna. Fusce gravida risus at ipsum lobortis id
-facilisis justo malesuada. Donec egestas placerat congue. Curabitur
-eget diam at odio iaculis pellentesque quis in est. Aenean sit amet
-sodales tortor. Morbi a nulla magna.
+Earlier this year I submitted a patent application for a compression method intended
+to help streamline the massive data output of SEL's flagship relay, the T400L/T401L -- an
+18 bit, megahertz sampling relay for the detection of traveling wave events on
+transmission lines. We have a vested interested in long-term data captures at this
+fidelity, but the existing implentation was naive and had excessive storage requirements,
+allowing only about 3 weeks on a 4TB SSD. As a project during Dr. Kutz's class at the UW
+(AMATH 582), I took his theme of assuming structure to solve $Ax=b$ given only $b$ and applied
+it to use an autoregressive model to more compactly represent these time series,
+producing lossy compression. Then, the errors are stored in Golomb-Rice codes, producing
+a reduction of 5.7 to 7.4 times less than the existing implementation. This was a
+major achievement -- it allows for one year of data to be stored on a single 3.5"
+drive, or streaming to offsite storage with reasonable bandwidth requirements.
 
-\section*{Education}
-Cras facilisis tristique nisi, eu vestibulum dolor molestie vel. Nam
-bibendum consectetur risus, a sodales odio commodo aliquam. Proin et
-nibh non felis ultrices ornare nec vel dui. Lorem ipsum dolor sit
-amet, consectetur adipiscing elit. Nunc mi ante, condimentum a rhoncus
-non, tristique at sapien. Donec ultricies urna sit amet lectus ornare
-ut feugiat mauris pharetra. Quisque blandit purus a nisi scelerisque
-imperdiet. Nunc accumsan accumsan mauris quis fermentum. Suspendisse
-vitae pellentesque nibh. Lorem ipsum dolor sit amet, consectetur
-adipiscing elit. Phasellus suscipit diam non est accumsan non suscipit
-mi mattis. Aliquam bibendum quam id lacus venenatis in interdum orci
-congue. Sed nunc augue, blandit semper ornare vitae, consequat vitae
-velit. Aliquam lacus massa, imperdiet malesuada scelerisque lacinia,
-vehicula et est. Mauris imperdiet, mi vel hendrerit lobortis, magna
-odio semper diam, sed bibendum arcu velit in nisl. Morbi viverra
-varius orci.
+A more recent achievement was the synthesis of a massive schematic dataset intended to
+bootstrap a related machine learning model we are working on. Over ten-thousand Eagle
+schematics were generated, including user specified components such as passives
+(resistors, etc.), active components (diodes, BJT's, etc.), transformers, integrated
+circuits, and more. This also included bounding boxes, component identifiers, values,
+rotations -- all without human intervention. I am currently in progress of expanding
+this capability to include more CAD programs.
 
-Praesent vel mi pharetra justo lacinia consectetur. In in odio neque.
-Donec in tellus nulla, quis fringilla quam. In hac habitasse platea
-dictumst. In hac habitasse platea dictumst. Maecenas nisi elit, dictum
-at fringilla vitae, vestibulum vitae ligula. Vestibulum ante ipsum
-primis in faucibus orci luctus et ultrices posuere cubilia Curae; Duis
-placerat ipsum sit amet ante fermentum condimentum. Nunc facilisis
-eros euismod nisl euismod id egestas turpis imperdiet. Etiam
-consectetur risus vitae augue scelerisque in fringilla odio
-vestibulum. Ut venenatis convallis suscipit. Maecenas cursus dignissim
-semper. Vestibulum tempor lectus vel justo consequat vel faucibus enim
-viverra. Donec nunc ligula, luctus nec molestie eget, aliquam vel
-lectus.
+Finally, I have applied optimization in several impactful ways. The first was generating
+nonlinear transmission line designs to achieve particular performance characteristics
+(impulse response rise time, peak value, etc.) that would be intractable with traditional
+engineering techniques. While this was not a particulary succesful project, it taught me two
+valuable lessons: have frank discussions with customers about requirements and ensure
+both parties have clear objectives to minimize iterations; and, while open-source
+software is a boon, niche projects can suffer from poor stability, reliance on end-of-lifed
+components, or even just incorrect behaviors. Similarly, another project involved
+fitting high-order, nonlinear transformer parameters through genetic algorithms. This
+was quite sucessful, and allowed me to learn that judicious use of penalties prevents
+compuationally correct but physically nonsensical models. This tool is still in use
+by our power engineering team. Finally, a recent achievement was the implementation of a
+crest-factor minimization problem in PyTorch that meets current state of the art, but
+will serve as a testbed for different optimizers (the paper in question uses
+Levenberg-Marquardt) and hyperparameter searches for these alternate optimizers.
+Furthermore, it will be an excellent framework for other optimization problems
+we regularly encounter without having to determine gradients and Hessians by hand.
 
-\section*{Teaching Experience}
-Praesent quam lectus, porttitor vel placerat non, tincidunt ac eros.
-Sed vitae libero risus, nec auctor ante. Aenean dapibus est blandit
-lorem facilisis nec blandit justo semper. Duis at sapien ante, vitae
-pulvinar urna. Mauris a nisi purus. Sed scelerisque, ligula eget
-scelerisque dignissim, quam massa luctus est, vel rhoncus augue dolor
-sed lacus. Vestibulum ultricies, metus a condimentum elementum, nisl
-turpis ultricies massa, in pulvinar neque quam vitae erat. Etiam
-consequat, massa a elementum bibendum, nisi eros porta nisl, pretium
-interdum dolor enim a tortor. Mauris ante tortor, consectetur quis
-tristique ac, ultricies et mauris. Integer turpis sapien, tincidunt
-vitae hendrerit iaculis, malesuada tincidunt mi. Aliquam sollicitudin
-sem vestibulum felis tincidunt hendrerit. Praesent leo turpis,
-tincidunt quis rhoncus quis, hendrerit at nibh. Mauris congue interdum
-viverra. Donec ut est nunc, non feugiat diam.
+\paragraph{Independent Study and Scalable Second Order Optimizers}
+As an online Masters student, I did not have the opportunity to write a traditional
+thesis. Instead, I approached Dr. Andrew Lumsdaine about doing an independent
+study course over the summer of 2020. Topics ranged from power system load flow
+simulations (using PETSc), CUDA/Thrust implementations of several matrix
+decompositions, and the intersection of graphs and linear algebra. Although there was
+no research output for this period of performance, I learned an incredible amount
+and made enough of an impression to be brought on helping with his Second Order Methods
+for Scalable Optimization project. This project involved using a trick (detailed
+in our preprint here: \textbf{TODO}) to reduce the memory and compuational requirements
+of Newton, Quasi-Newton, and other second order methods for applications in machine
+learning. 
 
-Mauris vestibulum elit et eros adipiscing luctus. Aenean dignissim
-tortor eget mi molestie faucibus. Mauris vel risus non quam viverra
-faucibus. Phasellus nibh eros, consequat id aliquam vel, gravida at
-nunc. Maecenas nec sem id libero consequat molestie. Ut dictum
-ultrices ligula, in tincidunt felis faucibus vitae. Maecenas suscipit
-magna nec velit sodales sit amet ullamcorper sem pretium.
+\section*{Career Goals}
+I see three non-orthogonal avenues in my future: professorship, industry, and civil service.
+All three share a common theme: perform at the intersection of applied math and engineering
+while providing relevant, timely, and understandable analysis and education to students,
+peers, or customers.
+
+The first appeals strongly -- the ability to conduct independent research while managing
+and enriching students is (as the audience is well aware) a rich and rewarding path in life.
+I've been priveleged to have had excellent professors, and have seen who I would want to be
+in engaging with students. I want to provide power engineers with the tools
+to step beyond traditional power engineering analyses and to engage with cutting-edge
+applied mathematics techniques. I regularly see brilliant power engineers
+failing to articulate problem statements or using heavy-handed approches out of ignorance
+-- much of my optimization work has grown out of statements such as ``I don't think this equation
+is solvable, so I'm not sure we can use this''  or ``Well, this system is highly
+nonlinear...''. Being a educator and researcher could do much to alleviate this as
+our power system continues to grow in complexity. Failing the arduous task of
+a full time, tenured faculty position, I would seek out options for adjunct positions
+just so I can continue to engage with students.
+
+In industry or civil service (working for an agency or a national lab), I would continue
+much in my same role if at all possible: providing exemplary work for government customers
+with the intent of making the grid safer, cheaper, and more reliable. This would take the
+form of consulting and providing tools and techniques for use by the federal government,
+and sound advice for shaping policy.
+
+
+\section*{Institution Selection}
 
 \section*{Concluding Remarks}
-Etiam id leo eget leo adipiscing sodales vitae faucibus eros. Ut nec
-diam nisi. Nunc eu velit orci. Praesent in ligula non lorem facilisis
-volutpat pharetra auctor nisi. Curabitur aliquam lacinia orci vel
-aliquam. Nullam et massa purus. Quisque sed ipsum nec purus blandit
-rhoncus.
 \end{document}
