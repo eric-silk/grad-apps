@@ -55,9 +55,9 @@ pdftitle={\yourname - \soptitle},pdfauthor={\yourname}, unicode]{hyperref}
 I am a Research Engineer at Schweitzer Engineering Laboratories (SEL), and graduating masters
 student of Applied Mathematics at the University of Washington with an undergraduate
 education in Electrical Engineering from the University of Idaho. My employer's mission is
-a simple one, and one I believe in: to make electric power safer, more reliable, and
-more economical. On a daily basis I perform at the intersection of applied math, electrical
-engineering, and software engineering to further this goal.
+one I believe in: to make electric power safer, more reliable, and more economical. On a daily
+basis I perform at the intersection of applied math, electrical engineering, and software
+engineering to further this goal.
 
 When I transferred to Government Services from R\&D, it became readily apparent there was
 an immense need for people who were capable of bridging the gap between the abstract and
@@ -84,28 +84,27 @@ system restart behavior, and code for Amazon Web Services' IoT, Lambda, and S3
 services. Then, these devices were hardened to prevent tampering through
 careful device configuration (SSH keys and passwords, disabling of WiFi, disabling
 of default accounts, etc.) We succesfully deployed several devices that showed greater
-resiliency than SEL's existing solution. In fact, the only major complication was
-handling proxies, as AWS's IoT implementation did not fully support common corporate
-proxy techniques at that time.
+resiliency than SEL's existing solution. These devices have performed uninterrupted for
+several years now, and we are currently investigating expansion of this sensor network.
 
 Earlier this year I submitted a patent application for a compression method intended
 to help streamline the massive data output of SEL's flagship relay, the T400L/T401L -- an
 18 bit, megahertz sampling relay for the detection of traveling wave events on
 transmission lines. We have a vested interested in long-term data captures at this
 fidelity, but the existing implentation was naive and had excessive storage requirements,
-allowing only about 3 weeks on a 4TB SSD. As a project during Dr. Kutz's class at the UW
-(AMATH 582), I took his theme of assuming structure to solve $Ax=b$ given only $b$ and applied
-it to use an autoregressive model to more compactly represent these time series,
+(three weeks on a four terabyte drive). As a project during Dr. Kutz's class at the UW
+(AMATH 582), I took his theme of assuming structure to solve $Ax=b$ given only $b$ and
+assumed an autoregressive model to more compactly represent these time series,
 producing lossy compression. Then, the errors are stored in Golomb-Rice codes, producing
 a reduction of 5.7 to 7.4 times less than the existing implementation. This was a
 major achievement -- it allows for one year of data to be stored on a single 3.5"
-drive, or streaming to offsite storage with reasonable bandwidth requirements.
+drive, or streaming to offsite storage using less bandwidth than a 1080p Netflix stream.
 
 A more recent achievement was the synthesis of a massive schematic dataset intended to
 bootstrap a related machine learning model we are working on. Over ten-thousand Eagle
 schematics were generated, including user specified components such as passives
 (resistors, etc.), active components (diodes, BJT's, etc.), transformers, integrated
-circuits, and more. This also included bounding boxes, component identifiers, values,
+circuits, and more. This also included bounding boxes, component identifiers and values,
 rotations -- all without human intervention. I am currently in progress of expanding
 this capability to include more CAD programs.
 
@@ -142,19 +141,19 @@ learning.
 
 \section*{Career Goals}
 I see three non-orthogonal avenues in my future: professorship, industry, and civil service.
-All three share a common theme: perform at the intersection of applied math and engineering
+All three share a common goal: perform at the intersection of applied math and engineering
 while providing relevant, timely, and understandable analysis and education to students,
 peers, or customers.
 
 The first appeals strongly -- the ability to conduct independent research while managing
-and enriching students is (as the audience is well aware) a rich and rewarding path in life.
-I've been priveleged to have had excellent professors, and have seen who I would want to be
-in engaging with students. I want to provide power engineers with the tools
-to step beyond traditional power engineering analyses and to engage with cutting-edge
+and enriching students is (as the audience is likely well aware) a rich and rewarding
+path in life. I've been priveleged to have had excellent professors, and have seen who
+I would want to be in engaging with students. I want to provide power engineers with the
+tools to step beyond traditional power engineering analyses and to engage with cutting-edge
 applied mathematics techniques. I regularly see brilliant power engineers
 failing to articulate problem statements or using heavy-handed approches out of ignorance
--- much of my optimization work has grown out of statements such as ``I don't think this equation
-is solvable, so I'm not sure we can use this''  or ``Well, this system is highly
+-- much of my optimization work has grown out of statements such as ``I don't think this
+equation is solvable, so I'm not sure we can use this''  or ``Well, this system is highly
 nonlinear...''. Being a educator and researcher could do much to alleviate this as
 our power system continues to grow in complexity. Failing the arduous task of
 a full time, tenured faculty position, I would seek out options for adjunct positions
