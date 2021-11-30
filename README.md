@@ -25,8 +25,6 @@ Still needed:
     - pubs
     - condensed SoP (1k words)
 
-There's an outstanding error I've reached out about correctig -- the review stage
-flags the "ECE Supplemental" section as incomplete but I have everything filled out.
 
 ### Compuational Science and Engineering
 #### Due Dec. 15th
@@ -39,8 +37,8 @@ Still needed:
 ### Electrical Engineering
 #### Due Dec. 15th
 Nearly done, just need:
-    - Phone Number for Dr. Kutz
     - SoP
+
 ### Applied Mathematics
 #### Due Jan. 13th, 2022
 Use the internal app!
