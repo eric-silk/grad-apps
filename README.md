@@ -14,8 +14,8 @@ resume when pubs happen.
 #### Due Dec. 15th
 https://oden.utexas.edu/academics/prospective-students/
 Application is through "ApplyTexas": https://goapplytexas.org/#
-Currently awaiting a response regarding the instructions to NOT create an EID...after
-I already did so. Woops.
+Due toa cock(rell)-up on my part, I'll need to finish the Cockrell application
+before restarting this one with an existing EID.
 
 
 ## Georgia Tech
@@ -58,9 +58,16 @@ Diversity Essay
 Resume
 Will send to recommenders as soon as they're added. I need to reach out to Dr. Kutz.
 
+### Computational Science and Engineering
+Not a degree granting program -- must apply AFTER being accepted.
+https://www.purdue.edu/gradschool/cigp/apply.html
+
 ## University of Illinois, Urbana-Champaign
 ### Electrical and Computer Engineering
+#### Due Dec. 15th
 http://catalog.illinois.edu/graduate/engineering/electrical-computer-engineering-phd/
+Just need to do SoP and personal statement
+
 ### Computational Science and Engineering
 https://cse.illinois.edu/cse-educational-programs/graduate-concentration/
 
@@ -73,7 +80,10 @@ Need:
 
 ## Stanford
 ### Electrical Engineering
-### Compuational and Mathematical Engineering
+#### Due Dec. 7th
+Oop...this one is due by the 7th. Will only start this once I get feedback from Val.
 
 ## MIT
 ### EECS
+#### Due Dec. 15th
+Just need to update pubs and my SoP. Letters were manually sent...weird.
