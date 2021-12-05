@@ -52,125 +52,105 @@ pdftitle={\yourname - \soptitle},pdfauthor={\yourname}, unicode]{hyperref}
 % NOTE: Use \amper instead of \&
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section*{Motivation and Background}
-I am a Research Engineer at Schweitzer Engineering Laboratories (SEL), and graduating masters
+I am a Research Engineer at Schweitzer Engineering Laboratories, Inc., and graduating masters
 student of Applied Mathematics at the University of Washington with a Bachelors of Science
 in Electrical Engineering from the University of Idaho. My employer's mission is
-one I believe in: to make electric power safer, more reliable, and more economical. On a daily
+one I believe in: ``To make electric power safer, more reliable, and more economical.'' On a daily
 basis I perform at the intersection of applied math, electrical engineering, and software
 engineering to further this goal.
 
-When I transferred to Government Services from R\&D, it became readily apparent there was
-an immense need for people who were capable of bridging the gap between the abstract and
-sometimes esoteric world of mathematics and real-world applications in engineering.
-To address my deficincies in the prior, I elected to pursue graduate education. 
-Three years later, even with the huge strides I have made, it is obvious my work has
-just started. Earning a PhD will allow me to transition into an independent, highly
-productive researcher and to speak with authority on topics related to electric power.
+Upon transferring to SEL's Government Services division from R\&D, it became apparent
+there is a need for people who are capable of bridging the gap between the abstract
+and esoteric world of mathematics and real-world applications in engineering.
+For this reason, I elected to pursue graduate education.
+Even with the huge strides I have made, my work has just started. Earning a PhD will allow me to
+transition into an independent, productive researcher and to speak with authority on topics
+related to electric power.
 
 \section*{Relevant Experience}
 \paragraph{Career Research}
-I must preface this section: due to its nature, I'm not able to discuss specifics of
-much of the work I do for my employer, and we are definitely not allowed to publish.
-However, I can say we are recognized as experts
+Due to the nature of my work for my employer, I am not allowed to discuss many specifics
+and definitely not allowed to publish. We are recognized as experts
 on power systems by various federal agencies and regularly provide research, analysis,
-and product to this end. In particular, we in the Data Analytics group marry this expertise
-with high performance computing, machine learning, statistics, and traditional applied
-mathematics to achieve novel and challenging goals. Of those I can discuss, several stand out.
+and product in this space. In particular, the Data Analytics group marries this expertise
+with high performance computing, machine learning, and traditional applied mathematics to
+achieve novel and challenging goals. Of what I can discuss, the following stand out.
 
-Earlier this year I submitted a patent application for a compression method intended
-to help streamline the massive data output of SEL's flagship relay, the T400L/T401L -- an
-18 bit, megahertz sampling relay for the detection of traveling wave events on
-transmission lines. We have a vested interested in long-term data captures at this
-fidelity, but the existing implentation was naive and had excessive storage requirements,
-(three weeks on a four terabyte drive). As a project during Dr. Kutz's class at the UW
-(AMATH 582), I took his theme of assuming structure to solve $Ax=b$ given only $b$ and
-assumed an autoregressive model to more compactly represent these time series,
-producing lossy compression. Then, the errors are stored in Golomb-Rice codes, producing
-a reduction of 5.7 to 7.4 times less than the existing implementation. This was a
-major achievement -- it allows for one year of data to be stored on a single 3.5"
-drive, or streaming to offsite storage using less bandwidth than a 1080p Netflix stream.
+In February, I submitted a patent application for a compression method
+to help streamline the massive data output of SEL's flagship relay, the T400L/T401L --- an
+18-bit, megahertz sampling relay for the detection of traveling wave events.
+We have a vested interest in long-term data captures at this
+fidelity, but the existing implementation had excessive storage requirements,
+(four terabytes for three weeks). During Dr. Kutz's class (AMATH 582), I applied his theme of
+assuming structure to solve $Ax=b$ given only $b$ and
+assume an autoregressive model and produce lossy compression. Then, the errors are stored in
+Golomb-Rice codes, producing a reduction of 5.7 to 7.4 times less than prior art.
+This was a major achievement --- it enabled storing one year of data on a single 3.5"
+drive, or streaming using less bandwidth than Netflix.
 
-My first assignment in Government Services was developing an Internet
-of Things (IoT) based sensor system to measure and store Synchrophasor data (GPS timestamped
-frequency, voltage, and phase) on the cloud. This involved selecting a computing platform,
-developing code to interact with a phasor measurement unit (PMU), robust logging and
-system restart behavior, and code for Amazon Web Services' IoT, Lambda, and S3
-services. Then, these devices were hardened to prevent tampering through
-careful device configuration (SSH keys and passwords, disabling of WiFi, disabling
-of default accounts, etc.) We succesfully deployed several devices that showed greater
-resiliency than SEL's existing solution. These devices have performed uninterrupted for
-several years now, and we are currently investigating expansion of this sensor network.
+My first assignment in Government Services was developing sensor system to measure and subsequently
+store Synchrophasor data (GPS timestamped frequency, voltage, and phase) on the cloud. This involved
+selecting a computing platform, developing code to interact with a phasor measurement unit (PMU),
+robust logging and system restarts, and code for Amazon Web Services' Internet of Things,
+Lambda, and S3 services -- all while ensuring the devices were secure. We successfully deployed
+several devices that have now performed uninterrupted for several years.
 
 
-A more recent achievement was the synthesis of a massive schematic dataset intended to
-bootstrap a related machine learning model we are working on. Over ten-thousand Eagle
-schematics were generated, including user specified components such as passives
-(resistors, etc.), active components (diodes, BJT's, etc.), transformers, integrated
-circuits, and more. This also included bounding boxes, component identifiers and values,
-rotations -- all without human intervention. I am currently in progress of expanding
-this capability to include more CAD programs.
+A recent achievement was the synthesis of a massive schematic dataset for bootstrapping a machine
+learning model. Over ten-thousand Eagle schematics were generated, including components such as
+passives (resistors, etc.), active components (diodes, BJT's), integrated circuits, and more.
+This included bounding boxes and component identifiers --- all without human intervention. I am
+actively expanding this capability to include more CAD programs.
 
-Finally, I have applied optimization in several impactful ways. The first was generating
-nonlinear transmission line designs to achieve particular performance characteristics
-(impulse response rise time, peak value, etc.) that would be intractable with traditional
-engineering techniques. While this was not a particulary succesful project, it taught me two
-valuable lessons: have frank discussions with customers about requirements and ensure
-both parties have clear objectives to minimize iterations; and, while open-source
-software is a boon, niche projects can suffer from poor stability, reliance on end-of-lifed
-components, or even just incorrect behaviors. Similarly, another project involved
-fitting high-order, nonlinear transformer parameters through genetic algorithms. This
-was quite sucessful, and allowed me to learn that judicious use of penalties prevents
-compuationally correct but physically nonsensical models. This tool is still in use
-by our power engineering team. Finally, a recent achievement was the implementation of a
-crest-factor minimization problem in PyTorch that meets current state of the art, but
-will serve as a testbed for different optimizers (the paper in question uses
-Levenberg-Marquardt) and hyperparameter searches for these alternate optimizers.
-Furthermore, it will be an excellent framework for other optimization problems
-we regularly encounter without having to determine gradients and Hessians by hand.
+Finally, I have applied optimization in several influential ways. The first was generating
+nonlinear transmission lines via genetic algorithms to achieve particular performance
+characteristics that would be intractable with traditional engineering techniques.
+From this, two lessons were gleaned: have frank discussions about
+requirements minimize iterations; and, while open-source software is a boon, niche projects can
+suffer from instability, end-of-life components, or even incorrect behaviors.
+Another project involved fitting high-order, nonlinear transformer parameters through genetic
+algorithms. This was quite successful, taught me that judicious use of penalties prevents
+computationally correct but physically nonsensical models, and is still in use by our power
+engineering team. Finally, I implemented a crest-factor minimization problem in PyTorch that will
+serve as a testbed for different optimizers, and introduced autodifferentiation and quasi-newton
+methods into our repertoire.
+
 
 \paragraph{Independent Study and Scalable Second Order Optimizers}
-As an online Masters student, I did not have the opportunity to write a traditional
-thesis. Instead, I approached Dr. Andrew Lumsdaine about doing an independent
-study course over the summer of 2020. Topics ranged from power system load flow
-simulations (using PETSc), CUDA/Thrust implementations of several matrix
-decompositions, and the intersection of graphs and linear algebra. Although there was
-no research output for this period of performance, I learned an incredible amount
-and made enough of an impression to be brought on helping with his Second Order Methods
-for Scalable Optimization project. This project involved using a trick (detailed
-in our preprint here: \textbf{TODO}) to reduce the memory and compuational requirements
-of Newton, Quasi-Newton, and other second order methods for applications in machine
-learning. Our git repository can be found here: \textbf{TODO}. 
+As an online Masters student, I was unable to write a thesis. To ameliorate this, I arranged an
+independent study course with Dr. Andrew Lumsdaine.
+Topics ranged from power system simulations using PETSc, matrix decompositions in CUDA, and the
+intersection of graphs and linear algebra. I learned an incredible amount and made enough of an
+impression to help with his Second Order Methods for Scalable Optimization project. This project
+hinges around the use of finite-difference Hessian approximations, along with limited-memory
+techniques to accelerate machine learning training. Our git repository can be found here:
+https://github.com/lums658/ml20
 
 \section*{Career Goals}
-I see three non-orthogonal avenues in my future: professorship, industry, and civil service.
-All three share a common goal: perform at the intersection of applied math and engineering
-while providing relevant, timely, and understandable analysis and education to students,
+I foresee three career trajectories: professorship, industry, and civil service.
+All share a common goal: perform at the intersection of applied math and engineering
+and provide relevant, timely, and digestible research and education to students,
 peers, or customers.
 
-I needn't tell the audience the appeal of the first. I've been priveleged to have had
-excellent professors, and have seen who I would want to be in engaging with students. I want
-to provide power engineers with the tools to step beyond traditional power engineering
-analyses and to engage with cutting-edge applied mathematics techniques. I regularly see
-brilliant power engineers failing to articulate problem statements or using heavy-handed
-approches out of ignorance -- much of my optimization work has grown out of statements
-such as ``I don't think this equation is solvable, so I'm not sure we can use this''  or
-``Well, this system is highly nonlinear...''. Being a educator and researcher could do
-much to alleviate this as our power system continues to grow in complexity. Should a
-full time, tenured faculty position not be in the cards, I would seek out options for
-adjunct or affiliate positions so I can continue to engage with students.
+As an educator, I would provide power engineers with the tools
+to step beyond traditional power engineering analyses and engage with cutting-edge applied
+mathematics techniques, while providing context and constraints to keep these techniques grounded in
+industrial realities.  In industry or civil service, I would continue in much my same role:
+exemplary work for government customers making the grid safer, cheaper, and more reliable.
+This would take the form of consulting and providing tools for use by the federal
+government, and sound advice for shaping policy.
 
-In industry, or in civil service (working for an agency or a national lab), I would continue
-much in my same role if at all possible: providing exemplary work for government customers
-with the intent of making the grid safer, cheaper, and more reliable. This would take the
-form of consulting and providing tools and techniques for use by the federal government,
-and sound advice for shaping policy.
-
+\section*{Challenges}
+I want to address two points. First, I had a medical withdrawal in undergrad with lingering
+effects in subsequent semesters. This issue has since been fully resolved, as evidenced
+by my final semesters and my graduate performance. Secondly, my withdrawal in graduate school was
+due to a death in my family. Neither pose risks to future academic endeavors.
 
 \section*{Institution Selection}
 
 \section*{Concluding Remarks}
-I hope I've demonstrated a clear updward trajectory in my career and research. I believe
+I hope I've demonstrated a clear upward trajectory in my career and research.
 I'm on the cusp of being a strong and independent researcher; a PhD from your program
-will be the keystone in my ability to contribute in a more impactful way to electrical
-engineering and applied mathematics.
+would be the keystone in my ability to contribute to electrical engineering and applied
+mathematics.
 \end{document}
