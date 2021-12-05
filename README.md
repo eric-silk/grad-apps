@@ -29,8 +29,7 @@ Still needed:
 ## University of Washington
 ### Electrical Engineering
 #### Due Dec. 15th
-Nearly done, just need:
-    - SoP
+Done!
 
 ### Applied Mathematics
 #### Due Jan. 13th, 2022
