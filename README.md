@@ -13,18 +13,12 @@ Done, need to upload the SoP when I get the email from them.
 
 ## Georgia Tech
 ### Electrical Engineering
-Started, https://gradapp.gatech.edu/account/login
-Still needed:
-    - pubs
-    - condensed SoP (1k words)
+Done!
 
 
 ### Compuational Science and Engineering
 #### Due Dec. 15th
-Started, https://gradapp.gatech.edu/account/login
-Still needed:
-    - pubs
-    - condensed SoP (1k words)
+Done!
 
 ## University of Washington
 ### Electrical Engineering
@@ -59,15 +53,9 @@ https://cse.illinois.edu/cse-educational-programs/graduate-concentration/
 ### Electrical Engineering
 #### Due Dec. 15th
 Need:
-    - SoP
     - More potential advisors
-
-## Stanford
-### Electrical Engineering
-#### Due Dec. 7th
-Oop...this one is due by the 7th. Will only start this once I get feedback from Val.
 
 ## MIT
 ### EECS
 #### Due Dec. 15th
-Just need to update pubs and my SoP. Letters were manually sent...weird.
+Done.

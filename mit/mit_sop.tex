@@ -1,0 +1,173 @@
+% !TEX program = xelatex
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% Title: SOP LaTeX Template
+%% Author: Soonho Kong / soonhok@cs.cmu.edu
+%% Modified by: Eric Silk
+%% Created: 2012-11-12
+%% Modified: 2021
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%
+%% Requirement:
+%%     You need to have the `Adobe Caslon Pro` font family.
+%%     For more information, please visit:
+%%     http://store1.adobe.com/cfusion/store/html/index.cfm?store=OLS-US&event=displayFontPackage&code=1712
+%%
+%% How to Compile:
+%%     $ xelatex main.tex
+%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\documentclass[letterpaper]{article}
+\usepackage[letterpaper,margin=1.0in,noheadfoot]{geometry}
+\usepackage{fontspec, color, enumerate, sectsty}
+\usepackage[normalem]{ulem}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%                      YOUR INFORMATION
+%
+%      PLEASE EDIT THE FOLLOWING LINES ACCORDINGLY!!
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\newcommand{\soptitle}{Statement of Purpose}
+\newcommand{\yourname}{Eric Silk}
+\newcommand{\youremail}{esilk16@uw.edu}
+
+%% FONTS SETUP
+\defaultfontfeatures{Mapping=tex-text}
+\usepackage[bookmarks, colorlinks, breaklinks,
+pdftitle={\yourname - \soptitle},pdfauthor={\yourname}, unicode]{hyperref}
+\hypersetup{linkcolor=magneta,citecolor=magenta,filecolor=magenta,urlcolor=[named]{WildStrawberry}}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%                      Title and Author Name
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{document}
+\begin{center}{\huge \scshape \soptitle}\end{center}
+\begin{center}\vspace{0.2em} {\Large \yourname\\}
+  {\youremail}\end{center}
+\frenchspacing
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%                      SOP Body
+% NOTE: Use \amper instead of \&
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section*{Motivation and Background}
+I am a Research Engineer at Schweitzer Engineering Laboratories, Inc., and graduating masters
+student of Applied Mathematics at the University of Washington with a Bachelors of Science
+in Electrical Engineering from the University of Idaho. My employer's mission is
+one I believe in: ``To make electric power safer, more reliable, and more economical.'' On a daily
+basis I perform at the intersection of applied math, electrical engineering, and software
+engineering to further this goal.
+
+Upon transferring to SEL's Government Services division from R\&D, it became apparent
+there is a need for people who are capable of bridging the gap between the abstract
+and esoteric world of mathematics and real-world applications in engineering.
+For this reason, I elected to pursue graduate education.
+Even with the huge strides I have made, my work has just started. Earning a PhD will allow me to
+transition into an independent, productive researcher and to speak with authority on topics
+related to electric power.
+
+\section*{Relevant Experience}
+\paragraph{Career Research}
+Due to the nature of my work for my employer, I am not allowed to discuss many specifics
+and definitely not allowed to publish. We are recognized as experts
+on power systems by various federal agencies and regularly provide research, analysis,
+and product in this space. In particular, the Data Analytics group marries this expertise
+with high performance computing, machine learning, and traditional applied mathematics to
+achieve novel and challenging goals. Of what I can discuss, the following stand out.
+
+In February, I submitted a patent application for a compression method
+to help streamline the massive data output of SEL's flagship relay, the T400L/T401L --- an
+18-bit, megahertz sampling relay for the detection of traveling wave events.
+We have a vested interest in long-term data captures at this
+fidelity, but the existing implementation had excessive storage requirements,
+(four terabytes for three weeks). During Dr. Kutz's class (AMATH 582), I applied his theme of
+assuming structure to solve $Ax=b$ given only $b$ and
+assume an autoregressive model and produce lossy compression. Then, the errors are stored in
+Golomb-Rice codes, producing a reduction of 5.7 to 7.4 times less than prior art.
+This was a major achievement --- it enabled storing one year of data on a single 3.5"
+drive, or streaming using less bandwidth than Netflix.
+
+My first assignment in Government Services was developing sensor system to measure and subsequently
+store Synchrophasor data (GPS timestamped frequency, voltage, and phase) on the cloud. This involved
+selecting a computing platform, developing code to interact with a phasor measurement unit (PMU),
+robust logging and system restarts, and code for Amazon Web Services' Internet of Things,
+Lambda, and S3 services -- all while ensuring the devices were secure. We successfully deployed
+several devices that have now performed uninterrupted for several years.
+
+
+A recent achievement was the synthesis of a massive schematic dataset for bootstrapping a machine
+learning model. Over ten-thousand Eagle schematics were generated, including components such as
+passives (resistors, etc.), active components (diodes, BJT's), integrated circuits, and more.
+This included bounding boxes and component identifiers --- all without human intervention. I am
+actively expanding this capability to include more CAD programs.
+
+Finally, I have applied optimization in several influential ways. The first was generating
+nonlinear transmission lines via genetic algorithms to achieve particular performance
+characteristics that would be intractable with traditional engineering techniques.
+From this, two lessons were gleaned: have frank discussions about
+requirements minimize iterations; and, while open-source software is a boon, niche projects can
+suffer from instability, end-of-life components, or even incorrect behaviors.
+Another project involved fitting high-order, nonlinear transformer parameters through genetic
+algorithms. This was quite successful, taught me that judicious use of penalties prevents
+computationally correct but physically nonsensical models, and is still in use by our power
+engineering team. Finally, I implemented a crest-factor minimization problem in PyTorch that will
+serve as a testbed for different optimizers, and introduced autodifferentiation and quasi-newton
+methods into our repertoire.
+
+
+\paragraph{Independent Study and Scalable Second Order Optimizers}
+As an online Masters student, I was unable to write a thesis. To ameliorate this, I arranged an
+independent study course with Dr. Andrew Lumsdaine.
+Topics ranged from power system simulations using PETSc, matrix decompositions in CUDA, and the
+intersection of graphs and linear algebra. I learned an incredible amount and made enough of an
+impression to help with his Second Order Methods for Scalable Optimization project. This project
+hinges around the use of finite-difference Hessian approximations, along with limited-memory
+techniques to accelerate machine learning training. Our git repository can be found here:
+https://github.com/lums658/ml20
+
+\section*{Career Goals}
+I foresee three career trajectories: professorship, industry, and civil service.
+All share a common goal: perform at the intersection of applied math and engineering
+and provide relevant, timely, and digestible research and education to students,
+peers, or customers.
+
+As an educator, I would provide power engineers with the tools
+to step beyond traditional power engineering analyses and engage with cutting-edge applied
+mathematics techniques, while providing context and constraints to keep these techniques grounded in
+industrial realities.  In industry or civil service, I would continue in much my same role:
+exemplary work for government customers making the grid safer, cheaper, and more reliable.
+This would take the form of consulting and providing tools for use by the federal
+government, and sound advice for shaping policy.
+
+\section*{Challenges}
+I want to address two points. First, I had a medical withdrawal in undergrad with lingering
+effects in subsequent semesters. This issue has since been fully resolved, as evidenced
+by my final semesters and my graduate performance. Secondly, my withdrawal in graduate school was
+due to a death in my family. Neither pose risks to future academic endeavors.
+
+\section*{Institution Selection}
+Every individual I've had the pleasure of interacting with that was an alumni or faculty member
+has demonstrated a clear ability to dissect complex problems into well-abstracted, intuitive
+components with tractable solutions and far-reaching impacts. I want to emulate this, and
+the best way to do so is to surround myself with folks who can challenge me, and
+who I can in turn challenge and help to grow. I cannot understate the import of the domain
+in which I work --- electric power is the lifeblood of modern living. As such, only the best
+tools and training, along with the best network of collaborators, will do in tackling its
+challenges. The world needs experts capable of guiding discourse, policy, technology
+and education to ensure equitable, economical, and reliable access to power. Your institution
+is doubtless the best to serve these needs.
+
+I want to also note that the opportunities afforded by the Lincoln Lab are akin to my current
+application space. Few other programs offer such a unique avenue for research
+
+
+\section*{Concluding Remarks}
+I hope I've demonstrated a clear upward trajectory in my career and research.
+I'm on the cusp of being a strong and independent researcher; a PhD from your program
+would be the keystone in my ability to contribute to electrical engineering and applied
+mathematics.
+\end{document}
