@@ -4,21 +4,23 @@ My applications for the following schools (in no particular order):
 ## University of Texas, Austin
 ### Electrical Engineering
 #### Due Dec. 15th
-DONE
+Done.
 
 ### Compuational Science, Engineering and Mathematics
 #### Due Dec. 15th
-Done, need to upload the SoP when I get the email from them.
+Ok, actually done.
 
 
 ## Georgia Tech
 ### Electrical Engineering
 Done!
+Waiting to hear back if I do really need to submit my official GRE report.
 
 
 ### Compuational Science and Engineering
 #### Due Dec. 15th
 Done!
+Waiting to hear back if I do really need to submit my official GRE report.
 
 ## University of Washington
 ### Electrical Engineering
@@ -52,8 +54,7 @@ https://cse.illinois.edu/cse-educational-programs/graduate-concentration/
 ## Oregon State University
 ### Electrical Engineering
 #### Due Dec. 15th
-Need:
-    - More potential advisors
+Done, didn't wait for Dr. Cotilla-Sanchez to respond.
 
 ## MIT
 ### EECS
