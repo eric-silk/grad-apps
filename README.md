@@ -60,3 +60,9 @@ Done, didn't wait for Dr. Cotilla-Sanchez to respond.
 ### EECS
 #### Due Dec. 15th
 Done.
+
+## University of Wisconsin, Madison
+### EE
+#### Due Dec. 15th
+Just need to get my SoP compiled and submitted.
+https://grad.wisc.edu/apply/
