@@ -1,0 +1,100 @@
+% !TEX program = xelatex
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% Title: SOP LaTeX Template
+%% Author: Soonho Kong / soonhok@cs.cmu.edu
+%% Modified by: Eric Silk
+%% Created: 2012-11-12
+%% Modified: 2021
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%
+%% Requirement:
+%%     You need to have the `Adobe Caslon Pro` font family.
+%%     For more information, please visit:
+%%     http://store1.adobe.com/cfusion/store/html/index.cfm?store=OLS-US&event=displayFontPackage&code=1712
+%%
+%% How to Compile:
+%%     $ xelatex main.tex
+%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\documentclass[letterpaper]{article}
+\usepackage[letterpaper,margin=1.0in,noheadfoot]{geometry}
+\usepackage{fontspec, color, enumerate, sectsty}
+\usepackage[normalem]{ulem}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%                      YOUR INFORMATION
+%
+%      PLEASE EDIT THE FOLLOWING LINES ACCORDINGLY!!
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\newcommand{\soptitle}{Personal Statement}
+\newcommand{\yourname}{Eric Silk}
+\newcommand{\youremail}{esilk16@uw.edu}
+
+%% FONTS SETUP
+\defaultfontfeatures{Mapping=tex-text}
+\usepackage[bookmarks, colorlinks, breaklinks,
+pdftitle={\yourname - \soptitle},pdfauthor={\yourname}, unicode]{hyperref}
+\hypersetup{linkcolor=magneta,citecolor=magenta,filecolor=magenta,urlcolor=[named]{WildStrawberry}}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%                      Title and Author Name
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{document}
+\begin{center}{\huge \scshape \soptitle}\end{center}
+\begin{center}\vspace{0.2em} {\Large \yourname\\}
+  {\youremail}\end{center}
+\frenchspacing
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%                      SOP Body
+% NOTE: Use \amper instead of \&
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section*{Asking the Right Questions}
+Johari windows were originally developed to
+understand interpersonal relationships and were famously brought into the mainstream
+by Donald Rumsfeld's statement of ``unknown unknowns.'' Succinctly, every person and
+every field of study has at least two ``blind spots'' --- that which we know we do not
+know, and that which we don't know we don't know. This problem manifests itself in two ways
+critical to research and academia: the readily apparent problem posed by research itself,
+and the meta-problem of how we produce an environment that can solve it. My graduate education
+was motivated by the desire to tackle these problems.
+
+\subsection*{Research}
+A coworker of mine was working on a problem in optimization called crest factor minimization: for
+a given series of sinusoids of fixed amplitude and frequency, seeks to minimize the ratio of peak
+value to RMS value (the infinity norm over the 2-norm). In its formulation were three ``funny bits.''
+The first, a unique optimizer called Levenberg-Marquardt, which he was unfamiliar with but able to
+learn about --- a known unknown. Then, determining how to extract the gradient and Hessian for
+vector norms; in particular, the infinity norm. Another known unknown, one which he solved via
+an analytic expression after much effort. However, it contained an unknown unknown: the
+use of auto-differentiation and finite difference methods that would have eased and sped his
+solution. The third, a trick involving first optimizing the ratio of a p-norm over the 2-norm where
+$p>2$, then increasing $p$ iteratively until finally jumping to infinity. An unknown unknown:
+the motivation behind this technique. Unless you've done a lot of work with solutions to polynomials, you likely
+wouldn't recognize this as a form of homotopy continuation.
+
+\subsection*{Academia}
+The meta-problem of how one creates such an environment can also be addressed via diversity.
+I was, effectively, a first-generation college student (both parents attended
+some community college, but neither received a degree). I nearly crashed and burned. There
+were so many unknown unknowns in navigating courses, academic culture, housing, financial aid...
+I didn't even realize I should have been asking questions. The only thing that really turned
+this around was an empathetic professor who took me under his wing and gave me the time no
+others seemed able or willing to provide. How many students have fallen through that gap?
+Furthermore, I am an otherwise a relatively privileged individual of society. Where am
+I blind to the difficulties of those less fortunate than I? What power dynamics have I
+been able to blithely ignore; worse yet, where have I possibly harmed another via my
+ignorance?
+
+Encouraging a diverse student body will lead to a broader pool of faculty that
+have experienced these hardships, and know that there are students for whom these challenges
+are a daily struggle. They needn't even have answers for these problems --- simply being
+aware enough to ask shifts them from unknown unknowns to known unknowns, and from there
+we can work to solve them.
+
+\end{document}
