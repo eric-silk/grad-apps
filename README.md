@@ -14,13 +14,11 @@ Ok, actually done.
 ## Georgia Tech
 ### Electrical Engineering
 Done!
-Waiting to hear back if I do really need to submit my official GRE report.
 
 
 ### Compuational Science and Engineering
 #### Due Dec. 15th
 Done!
-Waiting to hear back if I do really need to submit my official GRE report.
 
 ## University of Washington
 ### Electrical Engineering
@@ -63,8 +61,7 @@ Done.
 ## University of Wisconsin, Madison
 ### EE
 #### Due Dec. 15th
-Just need to get my SoP compiled and submitted.
-https://grad.wisc.edu/apply/
+Done!
 
 ## University of Michigan, Ann-Arbor
 ### ECE
