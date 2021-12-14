@@ -45,8 +45,7 @@ https://www.purdue.edu/gradschool/cigp/apply.html
 ## University of Illinois, Urbana-Champaign
 ### Electrical and Computer Engineering
 #### Due Dec. 15th
-http://catalog.illinois.edu/graduate/engineering/electrical-computer-engineering-phd/
-Just need to do SoP and personal statement
+Done!
 
 ### Computational Science and Engineering
 https://cse.illinois.edu/cse-educational-programs/graduate-concentration/
@@ -54,7 +53,7 @@ https://cse.illinois.edu/cse-educational-programs/graduate-concentration/
 ## Oregon State University
 ### Electrical Engineering
 #### Due Dec. 15th
-Done, didn't wait for Dr. Cotilla-Sanchez to respond.
+Done.
 
 ## MIT
 ### EECS
@@ -66,3 +65,8 @@ Done.
 #### Due Dec. 15th
 Just need to get my SoP compiled and submitted.
 https://grad.wisc.edu/apply/
+
+## University of Michigan, Ann-Arbor
+### ECE
+#### Due Dec. 15th
+Done!
