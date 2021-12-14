@@ -1,0 +1,93 @@
+% !TEX program = xelatex
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% Title: SOP LaTeX Template
+%% Author: Soonho Kong / soonhok@cs.cmu.edu
+%% Modified by: Eric Silk
+%% Created: 2012-11-12
+%% Modified: 2021
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%
+%% Requirement:
+%%     You need to have the `Adobe Caslon Pro` font family.
+%%     For more information, please visit:
+%%     http://store1.adobe.com/cfusion/store/html/index.cfm?store=OLS-US&event=displayFontPackage&code=1712
+%%
+%% How to Compile:
+%%     $ xelatex main.tex
+%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\documentclass[letterpaper]{article}
+\usepackage[letterpaper,margin=1.0in,noheadfoot]{geometry}
+\usepackage{fontspec, color, enumerate, sectsty}
+\usepackage[normalem]{ulem}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%                      YOUR INFORMATION
+%
+%      PLEASE EDIT THE FOLLOWING LINES ACCORDINGLY!!
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\newcommand{\soptitle}{Personal Statement}
+\newcommand{\yourname}{Eric Silk}
+\newcommand{\youremail}{esilk16@uw.edu}
+
+%% FONTS SETUP
+\defaultfontfeatures{Mapping=tex-text}
+\usepackage[bookmarks, colorlinks, breaklinks,
+pdftitle={\yourname - \soptitle},pdfauthor={\yourname}, unicode]{hyperref}
+\hypersetup{linkcolor=magneta,citecolor=magenta,filecolor=magenta,urlcolor=[named]{WildStrawberry}}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%                      Title and Author Name
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{document}
+\begin{center}{\huge \scshape \soptitle}\end{center}
+\begin{center}\vspace{0.2em} {\Large \yourname\\}
+  {\youremail\\}{Electrical and Computer Engineering}\end{center}
+\frenchspacing
+My motivation to pursue graduate education was simple: I was not satisfied
+with many of the explanations I had been given in my undergraduate engineering education and
+felt I had gaps --- known unknowns, and unknown unknowns.
+An illustrative anecdote was when a professor was introducing phase plane plots for
+transfer functions: he drew the two axes and indicated the left-hand side, ``If all
+your system's poles are here, you will be stable.'' When I asked why, he made a face
+as though he'd never been asked that, and told me to ``...try it in MATLAB, and you'll see.''
+
+This pattern was repeated in several other courses, and then in my first role as an engineer.
+Soon, however, I had the privilege of working alongside a pair of highly talented mathematicians
+in my current role as a Research  Engineer in Schweitzer Engineering Laboratories' Infrastructure Defense division.
+Their casual, almost
+effortless understanding of many of the more advanced topics in signal processing, optimization,
+and more was, I'll admit, a point of envy. I decided that while I'm generally fine with being
+the least knowledgeable in a group, this was too much of a disparity. Another illustrative
+anecdote: we were researching anomaly detection techniques. My one coworker came to my desk,
+threw down an IEEE journal article and said (paraphrasing): ``Look what these fools did!''
+They had, effectively, combined several statistical quantities without discernible connection
+to one another and said ``if this quantity exceeds this oddly specific value, we
+call it an anomaly.'' It was akin to saying ``if the ratio of pigeons to hawks on your
+line raised to the overall line capacitance exceeds 48.23458, you have an event.''
+The problem? I could not see that obvious error. Engineering practice is a house built on the
+foundation of mathematics, and I realized my abode was built on soft clay.
+
+I soon applied for a program in Applied Math at the University of Washington to address this.
+In fact, my first course illuminated the left-hand plane mechanism (the homogenous response
+is comprised of complex exponentials with the poles in the exponent --- of course
+negative real portions lead to asymptotic stability) and why nonlinearity is needed for real
+oscillators (What do you call Van der Pol's hammock? A relaxation oscillator!). That was just
+the start.
+This program has given me the tools and confidence to readily engage with mathematical literature
+to tackle challenging engineering problems. My work in our Infrastructure Defense division has
+underpinned the immense gravity of these problems. I now want to continue my education in this
+space, to become the best engineer I can be, and to speak with confidence when it comes
+to problems of grave importance. And, given the best possible
+outcome, be able to answer questions from students, peers, and political leaders
+with intuitive, rigorous reasoning, rather than deferring to MATLAB.
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%                      SOP Body
+% NOTE: Use \amper instead of \&
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\end{document}
